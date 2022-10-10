@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.12)
-include(pico_sdk_import.cmake)
+include(../../pico-sdk/pico_sdk_init.cmake)
 project(Pico_ePaper_Code)
 pico_sdk_init()
+
+enable_language(ASM)
 
 #添加编译子目录
 add_subdirectory(lib/Config)
